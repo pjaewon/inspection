@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for,session
+from flask import Flask, render_template, request, redirect, url_for
 import pandas as pd
 
 
@@ -247,6 +247,5 @@ def search_again():
 
 if __name__ == '__main__':
     app.run(debug=True)
-# if __name__ == '__main__':
-#     from waitress import serve
-#     serve(app, host="0.0.0.0", port=7396)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
